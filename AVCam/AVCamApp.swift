@@ -31,6 +31,7 @@ struct AVCamApp: App {
 /// A global logger for the app.
 let logger = Logger()
 
+
 struct TestCaptureIntent: CameraCaptureIntent{
     typealias AppContext = MyAppContext
     static let title: LocalizedStringResource = "test capture intent"
@@ -39,6 +40,7 @@ struct TestCaptureIntent: CameraCaptureIntent{
     @MainActor
     func perform() async throws -> some IntentResult {
         do {
+            print("Trying to perform intent")
             if let context = try await TestCaptureIntent.appContext {
                 return .result()
             }
@@ -53,3 +55,4 @@ struct TestCaptureIntent: CameraCaptureIntent{
 struct MyAppContext: Codable{
     let foo: Bool
 }
+

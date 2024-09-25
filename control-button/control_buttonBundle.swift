@@ -12,7 +12,7 @@ import SwiftUI
 @main
 struct control_buttonBundle: WidgetBundle {
     var body: some Widget {
-        control_button()
+        // control_button()
         control_buttonControl()
     }
 }
