@@ -558,7 +558,7 @@
 				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = locked_capture_extnsion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +590,7 @@
 				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = locked_capture_extnsion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
