@@ -10,13 +10,13 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct control_buttonBundle: WidgetBundle {
+struct ButtonControlWidgetBundle: WidgetBundle {
     init() {
         print("ELEPHANT: print control_buttonBundle init")
         NSLog("ELEPHANT: nslog control_buttonBundle init")
     }
     
     var body: some Widget {
-        control_buttonControl()
+        ButtonControlWidget()
     }
 }

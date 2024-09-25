@@ -11,14 +11,14 @@ import UIKit
 import UniformTypeIdentifiers
 import LockedCameraCapture
 
-struct locked_capture_extnsionViewFinder: UIViewControllerRepresentable {
+struct MyLockedCaptureViewfinder: UIViewControllerRepresentable {
     let session: LockedCameraCaptureSession
     var sourceType: UIImagePickerController.SourceType = .camera
 
     init(session: LockedCameraCaptureSession) {
         self.session = session
-        print("ELEPHANT locked_capture_extnsionViewFinder init")
-        NSLog("ELEPHANT locked_capture_extnsionViewFinder init")
+        print("ELEPHANT MyLockedCaptureViewfinder init")
+        NSLog("ELEPHANT MyLockedCaptureViewfinder init")
     }
  
     func makeUIViewController(context: Self.Context) -> UIImagePickerController {

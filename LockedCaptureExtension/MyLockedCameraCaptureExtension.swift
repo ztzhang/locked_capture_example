@@ -12,16 +12,16 @@ import SwiftUI
 import AppIntents
 
 @main
-struct locked_capture_extnsion: LockedCameraCaptureExtension {
+struct MyLockedCameraCaptureExtension: LockedCameraCaptureExtension {
     
     init() {
-        print("ELEPHANT: print locked_capture_extnsion init")
-        NSLog("ELEPHANT: nslog locked_capture_extnsion init")
+        print("ELEPHANT: print MyLockedCameraCaptureExtension init")
+        NSLog("ELEPHANT: nslog MyLockedCameraCaptureExtension init")
     }
     
     var body: some LockedCameraCaptureExtensionScene {
         LockedCameraCaptureUIScene { session in
-            locked_capture_extnsionViewFinder(session: session)
+            MyLockedCaptureViewfinder(session: session)
         }
     }
 }

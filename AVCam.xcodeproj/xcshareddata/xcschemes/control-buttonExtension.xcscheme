@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8C7EA5802C77AD860070BBCE"
-               BuildableName = "control-buttonExtension.appex"
-               BlueprintName = "control-buttonExtension"
+               BuildableName = "ControlButtonExtension.appex"
+               BlueprintName = "ControlButtonExtension"
                ReferencedContainer = "container:AVCam.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8C7EA5802C77AD860070BBCE"
-            BuildableName = "control-buttonExtension.appex"
-            BlueprintName = "control-buttonExtension"
+            BuildableName = "ControlButtonExtension.appex"
+            BlueprintName = "ControlButtonExtension"
             ReferencedContainer = "container:AVCam.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>

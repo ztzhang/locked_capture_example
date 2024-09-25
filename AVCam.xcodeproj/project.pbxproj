@@ -10,10 +10,10 @@
 		59C108012CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
 		59C108022CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
 		59C108032CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
-		8C7EA5772C77ABBC0070BBCE /* locked_capture_extnsion.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C7EA5772C77ABBC0070BBCE /* LockedCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA56E2C77ABBC0070BBCE /* LockedCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C7EA5842C77AD860070BBCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5832C77AD860070BBCE /* WidgetKit.framework */; };
 		8C7EA5862C77AD860070BBCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5852C77AD860070BBCE /* SwiftUI.framework */; };
-		8C7EA5952C77AD870070BBCE /* control-buttonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA5812C77AD860070BBCE /* control-buttonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C7EA5952C77AD870070BBCE /* ControlButtonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C7EA59C2C77D9150070BBCE /* LockedCameraCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA59B2C77D9150070BBCE /* LockedCameraCapture.framework */; };
 		C400F46128DFD8AC00861093 /* ThumbnailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */; };
 		C400F46328DFDAB700861093 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F46228DFDAB700861093 /* FoundationExtensions.swift */; };
@@ -70,7 +70,7 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				8C7EA5772C77ABBC0070BBCE /* locked_capture_extnsion.appex in Embed ExtensionKit Extensions */,
+				8C7EA5772C77ABBC0070BBCE /* LockedCaptureExtension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8C7EA5952C77AD870070BBCE /* control-buttonExtension.appex in Embed Foundation Extensions */,
+				8C7EA5952C77AD870070BBCE /* ControlButtonExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,8 +92,8 @@
 		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		59C108002CA4BF6E006D820B /* MyIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIntent.swift; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = locked_capture_extnsion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C7EA5812C77AD860070BBCE /* control-buttonExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "control-buttonExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7EA56E2C77ABBC0070BBCE /* LockedCaptureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = LockedCaptureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ControlButtonExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7EA5832C77AD860070BBCE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		8C7EA5852C77AD860070BBCE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		8C7EA59B2C77D9150070BBCE /* LockedCameraCapture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LockedCameraCapture.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.1.sdk/System/Library/Frameworks/LockedCameraCapture.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,25 +131,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8C7EA57B2C77ABBC0070BBCE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		598AE3FB2CA4C4EC003FF8ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 8C7EA56D2C77ABBC0070BBCE /* locked_capture_extnsion */;
+			target = 8C7EA56D2C77ABBC0070BBCE /* LockedCaptureExtension */;
 		};
 		8C7EA5962C77AD870070BBCE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 8C7EA5802C77AD860070BBCE /* control-buttonExtension */;
+			target = 8C7EA5802C77AD860070BBCE /* ControlButtonExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8C7EA56F2C77ABBC0070BBCE /* locked_capture_extnsion */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8C7EA57B2C77ABBC0070BBCE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = locked_capture_extnsion; sourceTree = "<group>"; };
-		8C7EA5872C77AD860070BBCE /* control-button */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8C7EA5962C77AD870070BBCE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "control-button"; sourceTree = "<group>"; };
+		8C7EA56F2C77ABBC0070BBCE /* LockedCaptureExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (598AE3FB2CA4C4EC003FF8ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = LockedCaptureExtension; sourceTree = "<group>"; };
+		8C7EA5872C77AD860070BBCE /* ControlButtonExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8C7EA5962C77AD870070BBCE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ControlButtonExtension; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,8 +293,8 @@
 			children = (
 				7710E8B4E5AEBAFE7C73EBAA /* README.md */,
 				C4F82C9B285ADDA2005D427A /* AVCam */,
-				8C7EA56F2C77ABBC0070BBCE /* locked_capture_extnsion */,
-				8C7EA5872C77AD860070BBCE /* control-button */,
+				8C7EA56F2C77ABBC0070BBCE /* LockedCaptureExtension */,
+				8C7EA5872C77AD860070BBCE /* ControlButtonExtension */,
 				8C7EA5822C77AD860070BBCE /* Frameworks */,
 				C4F82C9A285ADDA2005D427A /* Products */,
 				12C9517A9E72A121B2E3C5B4 /* Configuration */,
@@ -306,8 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				C4F82C99285ADDA2005D427A /* AVCam.app */,
-				8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */,
-				8C7EA5812C77AD860070BBCE /* control-buttonExtension.appex */,
+				8C7EA56E2C77ABBC0070BBCE /* LockedCaptureExtension.appex */,
+				8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,9 +351,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C7EA56D2C77ABBC0070BBCE /* locked_capture_extnsion */ = {
+		8C7EA56D2C77ABBC0070BBCE /* LockedCaptureExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C7EA57C2C77ABBC0070BBCE /* Build configuration list for PBXNativeTarget "locked_capture_extnsion" */;
+			buildConfigurationList = 8C7EA57C2C77ABBC0070BBCE /* Build configuration list for PBXNativeTarget "LockedCaptureExtension" */;
 			buildPhases = (
 				8C7EA56A2C77ABBC0070BBCE /* Sources */,
 				8C7EA56B2C77ABBC0070BBCE /* Frameworks */,
@@ -364,18 +364,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8C7EA56F2C77ABBC0070BBCE /* locked_capture_extnsion */,
+				8C7EA56F2C77ABBC0070BBCE /* LockedCaptureExtension */,
 			);
-			name = locked_capture_extnsion;
+			name = LockedCaptureExtension;
 			packageProductDependencies = (
 			);
 			productName = locked_capture_extnsion;
-			productReference = 8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */;
+			productReference = 8C7EA56E2C77ABBC0070BBCE /* LockedCaptureExtension.appex */;
 			productType = "com.apple.product-type.extensionkit-extension";
 		};
-		8C7EA5802C77AD860070BBCE /* control-buttonExtension */ = {
+		8C7EA5802C77AD860070BBCE /* ControlButtonExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C7EA5972C77AD870070BBCE /* Build configuration list for PBXNativeTarget "control-buttonExtension" */;
+			buildConfigurationList = 8C7EA5972C77AD870070BBCE /* Build configuration list for PBXNativeTarget "ControlButtonExtension" */;
 			buildPhases = (
 				8C7EA57D2C77AD860070BBCE /* Sources */,
 				8C7EA57E2C77AD860070BBCE /* Frameworks */,
@@ -386,13 +386,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8C7EA5872C77AD860070BBCE /* control-button */,
+				8C7EA5872C77AD860070BBCE /* ControlButtonExtension */,
 			);
-			name = "control-buttonExtension";
+			name = ControlButtonExtension;
 			packageProductDependencies = (
 			);
 			productName = "control-buttonExtension";
-			productReference = 8C7EA5812C77AD860070BBCE /* control-buttonExtension.appex */;
+			productReference = 8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		C4F82C98285ADDA2005D427A /* AVCam */ = {
@@ -453,8 +453,8 @@
 			projectRoot = "";
 			targets = (
 				C4F82C98285ADDA2005D427A /* AVCam */,
-				8C7EA56D2C77ABBC0070BBCE /* locked_capture_extnsion */,
-				8C7EA5802C77AD860070BBCE /* control-buttonExtension */,
+				8C7EA56D2C77ABBC0070BBCE /* LockedCaptureExtension */,
+				8C7EA5802C77AD860070BBCE /* ControlButtonExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -542,12 +542,12 @@
 /* Begin PBXTargetDependency section */
 		8C7EA5762C77ABBC0070BBCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8C7EA56D2C77ABBC0070BBCE /* locked_capture_extnsion */;
+			target = 8C7EA56D2C77ABBC0070BBCE /* LockedCaptureExtension */;
 			targetProxy = 8C7EA5752C77ABBC0070BBCE /* PBXContainerItemProxy */;
 		};
 		8C7EA5942C77AD870070BBCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8C7EA5802C77AD860070BBCE /* control-buttonExtension */;
+			target = 8C7EA5802C77AD860070BBCE /* ControlButtonExtension */;
 			targetProxy = 8C7EA5932C77AD870070BBCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -563,7 +563,7 @@
 				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
+				INFOPLIST_FILE = LockedCaptureExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = locked_capture_extnsion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -599,7 +599,7 @@
 				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
+				INFOPLIST_FILE = LockedCaptureExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = locked_capture_extnsion;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -637,7 +637,7 @@
 				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "control-button/Info.plist";
+				INFOPLIST_FILE = ControlButtonExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "control-button";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -675,7 +675,7 @@
 				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "control-button/Info.plist";
+				INFOPLIST_FILE = ControlButtonExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "control-button";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -923,7 +923,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C7EA57C2C77ABBC0070BBCE /* Build configuration list for PBXNativeTarget "locked_capture_extnsion" */ = {
+		8C7EA57C2C77ABBC0070BBCE /* Build configuration list for PBXNativeTarget "LockedCaptureExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C7EA5792C77ABBC0070BBCE /* Debug */,
@@ -932,7 +932,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C7EA5972C77AD870070BBCE /* Build configuration list for PBXNativeTarget "control-buttonExtension" */ = {
+		8C7EA5972C77AD870070BBCE /* Build configuration list for PBXNativeTarget "ControlButtonExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C7EA5982C77AD870070BBCE /* Debug */,

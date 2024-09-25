@@ -17,6 +17,8 @@ struct MyIntent: CameraCaptureIntent {
             print("ELEPHANT print Trying to perform intent")
             NSLog("ELEPHANT NSLog Trying to perform intent")
             if let context = try await MyIntent.appContext {
+                print("ELEPHANT print context = \(context)")
+                NSLog("ELEPHANT NSLog context = \(context)")
                 return .result()
             }
             

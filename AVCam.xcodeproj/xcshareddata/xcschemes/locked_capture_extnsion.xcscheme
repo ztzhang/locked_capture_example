@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8C7EA56D2C77ABBC0070BBCE"
-               BuildableName = "locked_capture_extnsion.appex"
-               BlueprintName = "locked_capture_extnsion"
+               BuildableName = "LockedCaptureExtension.appex"
+               BlueprintName = "LockedCaptureExtension"
                ReferencedContainer = "container:AVCam.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
