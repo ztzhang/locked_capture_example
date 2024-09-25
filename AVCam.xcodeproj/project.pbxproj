@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C108012CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
+		59C108022CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
+		59C108032CA4BF6E006D820B /* MyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C108002CA4BF6E006D820B /* MyIntent.swift */; };
 		8C7EA5772C77ABBC0070BBCE /* locked_capture_extnsion.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C7EA5842C77AD860070BBCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5832C77AD860070BBCE /* WidgetKit.framework */; };
 		8C7EA5862C77AD860070BBCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5852C77AD860070BBCE /* SwiftUI.framework */; };
@@ -87,6 +90,7 @@
 
 /* Begin PBXFileReference section */
 		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		59C108002CA4BF6E006D820B /* MyIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIntent.swift; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8C7EA56E2C77ABBC0070BBCE /* locked_capture_extnsion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = locked_capture_extnsion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7EA5812C77AD860070BBCE /* control-buttonExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "control-buttonExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +325,7 @@
 				C4EA0DC12891F2D60085A584 /* Support */,
 				C4F82CA0285ADDA3005D427A /* Assets.xcassets */,
 				C4F82CA3285ADDA3005D427A /* Preview Content */,
+				59C108002CA4BF6E006D820B /* MyIntent.swift */,
 			);
 			path = AVCam;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C108022CA4BF6E006D820B /* MyIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C108032CA4BF6E006D820B /* MyIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +515,7 @@
 				C4E15AB12898660900827683 /* PhotoCapture.swift in Sources */,
 				C480918B2BD59D7D00753C4A /* SPCObserver.swift in Sources */,
 				C4F82CCC285AE206005D427A /* CaptureService.swift in Sources */,
+				59C108012CA4BF6E006D820B /* MyIntent.swift in Sources */,
 				C4F82C9D285ADDA2005D427A /* AVCamApp.swift in Sources */,
 				C4EA0DCB289205C10085A584 /* FeatureToolbar.swift in Sources */,
 				C472D84F285BDFA60082244A /* MainToolbar.swift in Sources */,
@@ -552,7 +560,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
@@ -570,10 +578,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -584,7 +596,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = locked_capture_extnsion/Info.plist;
@@ -602,9 +614,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -618,7 +634,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "control-button/Info.plist";
@@ -636,10 +652,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -652,7 +672,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "control-button/Info.plist";
@@ -670,9 +690,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -809,7 +833,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -838,11 +862,12 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -857,7 +882,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
-				DEVELOPMENT_TEAM = HL629CQN47;
+				DEVELOPMENT_TEAM = JQ525L2MZD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -886,11 +911,12 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

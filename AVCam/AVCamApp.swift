@@ -22,6 +22,8 @@ struct AVCamApp: App {
                 .statusBarHidden(true)
                 .task {
                     // Start the capture pipeline.
+                    print("ELEPHANT print about to call await camera.start()")
+                    NSLog("ELEPHANT NSLog about to call await camera.start()")
                     await camera.start()
                 }
         }
@@ -31,28 +33,4 @@ struct AVCamApp: App {
 /// A global logger for the app.
 let logger = Logger()
 
-
-struct TestCaptureIntent: CameraCaptureIntent{
-    typealias AppContext = MyAppContext
-    static let title: LocalizedStringResource = "test capture intent"
-    static let description: IntentDescription? = IntentDescription("Capture Image")
-    
-    @MainActor
-    func perform() async throws -> some IntentResult {
-        do {
-            print("Trying to perform intent")
-            if let context = try await TestCaptureIntent.appContext {
-                return .result()
-            }
-            
-        } catch {
-            
-        }
-        return .result()
-    }
-}
-
-struct MyAppContext: Codable{
-    let foo: Bool
-}
 

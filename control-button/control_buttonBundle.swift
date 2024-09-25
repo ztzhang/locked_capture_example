@@ -11,8 +11,12 @@ import SwiftUI
 
 @main
 struct control_buttonBundle: WidgetBundle {
+    init() {
+        print("ELEPHANT: print control_buttonBundle init")
+        NSLog("ELEPHANT: nslog control_buttonBundle init")
+    }
+    
     var body: some Widget {
-        // control_button()
         control_buttonControl()
     }
 }

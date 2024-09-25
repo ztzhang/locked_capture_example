@@ -17,7 +17,8 @@ struct locked_capture_extnsionViewFinder: UIViewControllerRepresentable {
 
     init(session: LockedCameraCaptureSession) {
         self.session = session
-        print("trying to open this.")
+        print("ELEPHANT locked_capture_extnsionViewFinder init")
+        NSLog("ELEPHANT locked_capture_extnsionViewFinder init")
     }
  
     func makeUIViewController(context: Self.Context) -> UIImagePickerController {
