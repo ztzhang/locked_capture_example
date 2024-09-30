@@ -15,8 +15,7 @@ import AppIntents
 struct MyLockedCameraCaptureExtension: LockedCameraCaptureExtension {
     
     init() {
-        print("ELEPHANT: print MyLockedCameraCaptureExtension init")
-        NSLog("ELEPHANT: nslog MyLockedCameraCaptureExtension init")
+        NSLog("ELEPHANT: MyLockedCameraCaptureExtension init")
     }
     
     var body: some LockedCameraCaptureExtensionScene {

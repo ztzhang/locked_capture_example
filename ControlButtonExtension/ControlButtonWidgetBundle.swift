@@ -6,14 +6,23 @@
 //  Copyright © 2024 Apple. All rights reserved.
 //
 
+import AppIntents
 import WidgetKit
 import SwiftUI
+//import my_intent_lib
+import MyIntentFramework
+
+struct MyControlButtonExtensionPackage: AppIntentsPackage {
+    static var includedPackages: [any AppIntentsPackage.Type] {
+        //[my_intent_lib.MyIntentFrameworkPackage.self,]
+        [MyIntentFramework.MyIntentFrameworkPackage2.self,]
+   }
+}
 
 @main
 struct ButtonControlWidgetBundle: WidgetBundle {
     init() {
-        print("ELEPHANT: print control_buttonBundle init")
-        NSLog("ELEPHANT: nslog control_buttonBundle init")
+        NSLog("ELEPHANT: ButtonControlWidgetBundle init")
     }
     
     var body: some Widget {

@@ -39,6 +39,17 @@
                ReferencedContainer = "container:AVCam.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "59F2A5B52CAB293C00474F5B"
+               BuildableName = "my_intent_modTests.xctest"
+               BlueprintName = "my_intent_modTests"
+               ReferencedContainer = "container:AVCam.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

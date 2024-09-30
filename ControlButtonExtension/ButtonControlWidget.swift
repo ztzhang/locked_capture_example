@@ -9,19 +9,22 @@
 import AppIntents
 import SwiftUI
 import WidgetKit
+import my_intent_lib
+import MyIntentFramework
 
 struct ButtonControlWidget: ControlWidget {
     static let kind: String = "com.example.apple-samplecode.AVCam-zt.control-button"
     
     init() {
-        print("ELEPHANT: print ButtonControlWidget init")
-        NSLog("ELEPHANT: nslog ButtonControlWidget init")
+        NSLog("ELEPHANT: ButtonControlWidget init")
     }
 
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(kind: Self.kind) {
             ControlWidgetButton(
-                action: MyIntent()
+                //action: my_intent_lib.MyIntent()
+                //action: MyIntentEmbedded()
+                action: MyIntentFramework.MyIntentFrameworkStruct()
             ) {
                 Label("Label 3", systemImage: "camera")
             }
