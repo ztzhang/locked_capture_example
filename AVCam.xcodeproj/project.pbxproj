@@ -10,7 +10,6 @@
 		594D18FA2CAB56FE00FA859C /* MyIntentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; };
 		594D18FB2CAB56FE00FA859C /* MyIntentFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		594D19052CAB577500FA859C /* MyIntentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; };
-		594D19092CAB5CBD00FA859C /* my_intent_lib in Frameworks */ = {isa = PBXBuildFile; productRef = 594D19082CAB5CBD00FA859C /* my_intent_lib */; };
 		8C7EA5842C77AD860070BBCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5832C77AD860070BBCE /* WidgetKit.framework */; };
 		8C7EA5862C77AD860070BBCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5852C77AD860070BBCE /* SwiftUI.framework */; };
 		8C7EA5952C77AD870070BBCE /* ControlButtonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -106,7 +105,6 @@
 
 /* Begin PBXFileReference section */
 		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		594D18CC2CAB454B00FA859C /* my_intent_lib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = my_intent_lib; sourceTree = "<group>"; };
 		594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyIntentFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F2A5A42CAB167700474F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594D19092CAB5CBD00FA859C /* my_intent_lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +314,6 @@
 		C4F82C90285ADDA2005D427A = {
 			isa = PBXGroup;
 			children = (
-				594D18CC2CAB454B00FA859C /* my_intent_lib */,
 				7710E8B4E5AEBAFE7C73EBAA /* README.md */,
 				C4F82C9B285ADDA2005D427A /* AVCam */,
 				8C7EA56F2C77ABBC0070BBCE /* LockedCaptureExtension */,
@@ -402,7 +398,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				594D19072CAB5BEC00FA859C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				594D18F52CAB56FE00FA859C /* MyIntentFramework */,
@@ -632,10 +627,6 @@
 			target = 594D18F32CAB56FE00FA859C /* MyIntentFramework */;
 			targetProxy = 594D19032CAB577000FA859C /* PBXContainerItemProxy */;
 		};
-		594D19072CAB5BEC00FA859C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 594D19062CAB5BEC00FA859C /* my_intent_lib */;
-		};
 		8C7EA5942C77AD870070BBCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8C7EA5802C77AD860070BBCE /* ControlButtonExtension */;
@@ -669,6 +660,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -712,6 +704,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -1151,10 +1144,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		594D19062CAB5BEC00FA859C /* my_intent_lib */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = my_intent_lib;
-		};
 		594D19082CAB5CBD00FA859C /* my_intent_lib */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = my_intent_lib;

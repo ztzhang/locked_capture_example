@@ -8,13 +8,11 @@ A sample app that shows how to a use the AVFoundation capture APIs to perform me
 import os
 import SwiftUI
 import AppIntents
-//import my_intent_lib
 import MyIntentFramework
 
-struct MyAppExtensionPackage: AppIntentsPackage {
+struct MyAppAppIntentsPackage: AppIntentsPackage {
     static var includedPackages: [any AppIntentsPackage.Type] {
-        //[my_intent_lib.MyIntentFrameworkPackage.self,]
-        [MyIntentFramework.MyIntentFrameworkPackage2.self,]
+        [MyIntentFramework.MyIntentFrameworkPackage.self]
    }
 }
 

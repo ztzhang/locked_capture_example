@@ -9,7 +9,6 @@
 import AppIntents
 import SwiftUI
 import WidgetKit
-import my_intent_lib
 import MyIntentFramework
 
 struct ButtonControlWidget: ControlWidget {
@@ -22,8 +21,6 @@ struct ButtonControlWidget: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(kind: Self.kind) {
             ControlWidgetButton(
-                //action: my_intent_lib.MyIntent()
-                //action: MyIntentEmbedded()
                 action: MyIntentFramework.MyIntentFrameworkStruct()
             ) {
                 Label("Label 3", systemImage: "camera")

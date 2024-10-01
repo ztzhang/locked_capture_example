@@ -1,8 +1,7 @@
 import AppIntents
 import Foundation
-import my_intent_lib
 
-public struct MyIntentFrameworkPackage2: AppIntentsPackage { }
+public struct MyIntentFrameworkPackage: AppIntentsPackage { }
 
 
 // ELEPHANT
@@ -12,39 +11,42 @@ public struct MyIntentFrameworkPackage2: AppIntentsPackage { }
 // https://forums.swift.org/t/ios-appintents-unable-to-determine-value-type-for-type-when-appenum-belongs-to-swift-package/69915
 //
 // WWDC reference something about a dictionary
-public typealias MyIntentFrameworkStruct = my_intent_lib.MyIntent
+//
+// SO post confirming it doesn't work from a SPM pacakge
+// https://stackoverflow.com/questions/76900046/how-to-setup-an-ios-17-interactive-widget-using-appintents-from-an-spm-package
 
-//public struct MyIntentFrameworkStruct: CameraCaptureIntent {
-//  public typealias AppContext = MyAppContextFramework
-//  public static let title: LocalizedStringResource = "test capture intent"
-//  public static let description: IntentDescription? = IntentDescription("Capture Image")
-//
-//  public init() {
-//    NSLog("ELEPHANT: MyIntentFramework init")
-//  }
-//
-//  @MainActor
-//  public func perform() async throws -> some IntentResult {
-//    do {
-//      NSLog("ELEPHANT MyIntentFramework perform() 100")
-//      if let context = try await MyIntentFrameworkStruct.appContext {
-//        NSLog("ELEPHANT MyIntentFramework perform() 200")
-//        return .result()
-//      }
-//
-//    } catch {
-//
-//    }
-//    return .result()
-//  }
-//}
-//
-//public struct MyAppContextFramework: Codable, Sendable {
-//  let foo: Bool
-//
-//  public init() {
-//    NSLog("ELEPHANT: MyAppContextFramework init")
-//    self.foo = true
-//    NSLog("ELEPHANT: MyAppContextFramework init 2")
-//  }
-//}
+// This does:
+public struct MyIntentFrameworkStruct: CameraCaptureIntent {
+  public typealias AppContext = MyAppContextFramework
+  public static let title: LocalizedStringResource = "test capture intent"
+  public static let description: IntentDescription? = IntentDescription("Capture Image")
+
+  public init() {
+    NSLog("ELEPHANT: MyIntentFramework init")
+  }
+
+  @MainActor
+  public func perform() async throws -> some IntentResult {
+    do {
+      NSLog("ELEPHANT MyIntentFramework perform() 100")
+      if let context = try await MyIntentFrameworkStruct.appContext {
+        NSLog("ELEPHANT MyIntentFramework perform() 200")
+        return .result()
+      }
+
+    } catch {
+
+    }
+    return .result()
+  }
+}
+
+public struct MyAppContextFramework: Codable, Sendable {
+  let foo: Bool
+
+  public init() {
+    NSLog("ELEPHANT: MyAppContextFramework init")
+    self.foo = true
+    NSLog("ELEPHANT: MyAppContextFramework init 2")
+  }
+}

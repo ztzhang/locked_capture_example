@@ -9,13 +9,11 @@
 import AppIntents
 import WidgetKit
 import SwiftUI
-//import my_intent_lib
 import MyIntentFramework
 
-struct MyControlButtonExtensionPackage: AppIntentsPackage {
+struct MyControlButtonExtensionAppIntentsPackage: AppIntentsPackage {
     static var includedPackages: [any AppIntentsPackage.Type] {
-        //[my_intent_lib.MyIntentFrameworkPackage.self,]
-        [MyIntentFramework.MyIntentFrameworkPackage2.self,]
+        [MyIntentFramework.MyIntentFrameworkPackage.self]
    }
 }
 
