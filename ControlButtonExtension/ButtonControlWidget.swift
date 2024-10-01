@@ -6,7 +6,6 @@
 //  Copyright © 2024 Apple. All rights reserved.
 //
 
-import AppIntents
 import SwiftUI
 import WidgetKit
 import MyIntentFramework
@@ -21,7 +20,7 @@ struct ButtonControlWidget: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(kind: Self.kind) {
             ControlWidgetButton(
-                action: MyIntentFramework.MyIntentFrameworkStruct()
+                action: MyIntentFramework.MyCameraCaptureIntent()
             ) {
                 Label("Label 3", systemImage: "camera")
             }

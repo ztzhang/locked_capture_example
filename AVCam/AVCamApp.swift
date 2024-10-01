@@ -7,14 +7,6 @@ A sample app that shows how to a use the AVFoundation capture APIs to perform me
 
 import os
 import SwiftUI
-import AppIntents
-import MyIntentFramework
-
-struct MyAppAppIntentsPackage: AppIntentsPackage {
-    static var includedPackages: [any AppIntentsPackage.Type] {
-        [MyIntentFramework.MyIntentFrameworkPackage.self]
-   }
-}
 
 @main
 /// The AVCam app's main entry point.

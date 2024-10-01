@@ -10,6 +10,7 @@
 		594D18FA2CAB56FE00FA859C /* MyIntentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; };
 		594D18FB2CAB56FE00FA859C /* MyIntentFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		594D19052CAB577500FA859C /* MyIntentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */; };
+		598AE4122CACAD35003FF8ED /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AE4112CACAD34003FF8ED /* AppIntents.swift */; };
 		8C7EA5842C77AD860070BBCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5832C77AD860070BBCE /* WidgetKit.framework */; };
 		8C7EA5862C77AD860070BBCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7EA5852C77AD860070BBCE /* SwiftUI.framework */; };
 		8C7EA5952C77AD870070BBCE /* ControlButtonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C7EA5812C77AD860070BBCE /* ControlButtonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -106,6 +107,7 @@
 /* Begin PBXFileReference section */
 		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		594D18F42CAB56FE00FA859C /* MyIntentFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyIntentFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		598AE4112CACAD34003FF8ED /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
 		59F2A5A42CAB167700474F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8C7EA56E2C77ABBC0070BBCE /* LockedCaptureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = LockedCaptureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,6 +342,7 @@
 		C4F82C9B285ADDA2005D427A /* AVCam */ = {
 			isa = PBXGroup;
 			children = (
+				598AE4112CACAD34003FF8ED /* AppIntents.swift */,
 				59F2A5A42CAB167700474F5B /* Info.plist */,
 				C4F82C9C285ADDA2005D427A /* AVCamApp.swift */,
 				C48091832BD584AD00753C4A /* CameraModel.swift */,
@@ -605,6 +608,7 @@
 				C4C686232892E33E0038EDE1 /* RecordingTimeView.swift in Sources */,
 				C4DFD84428C3E173005B74F0 /* DataTypes.swift in Sources */,
 				C4EA0DC02891EFC20085A584 /* MovieCapture.swift in Sources */,
+				598AE4122CACAD35003FF8ED /* AppIntents.swift in Sources */,
 				C4EA0DC32891F2F80085A584 /* CaptureExtensions.swift in Sources */,
 				C472D846285BBFA60082244A /* DeviceLookup.swift in Sources */,
 				C400F46328DFDAB700861093 /* FoundationExtensions.swift in Sources */,
