@@ -9,6 +9,7 @@
 import AppIntents
 import WidgetKit
 import SwiftUI
+import MyIntentFramework
 
 @main
 struct ButtonControlWidgetBundle: WidgetBundle {
